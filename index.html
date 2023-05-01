@@ -19,15 +19,15 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row d-fle">
             <nav class="navbar bg-light">
-                <div class="container-fluid d-flex">
+                <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <i class="fa-brands fa-instagram"></i>
                         Instagram
                     </a>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop">
                         Create new post
                     </button>
@@ -54,21 +54,17 @@
                         </div>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-gear"></i></button>
-                        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="visually-hidden">Toggle Dropdown</span>
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
                         </ul>
-                    </div>
+                      </div>
                 </div>
             </nav>
         </div>
@@ -76,11 +72,11 @@
             <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">grid</button>
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">post</button>
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
